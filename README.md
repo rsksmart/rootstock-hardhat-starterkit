@@ -1,4 +1,4 @@
-<img src="rootstock-logo.jpg" alt="RSK Logo" style="max-width:auto; height: auto;" />
+<img src="rootstock-logo.jpg" alt="RSK Logo" style="width:100%; height: auto;" />
 
 ## Rootstock Hardhat Starterkit Configuration
 
