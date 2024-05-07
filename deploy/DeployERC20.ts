@@ -6,7 +6,7 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
 
 	await hre.deployments.deploy("MockERC20", {
 		from: deployer,
-		args: ["MockERC20", "tRSK", owner],
+		args: [1000000,"MockERC20", "tRSK", owner],
 		log: true,
 	})
 }

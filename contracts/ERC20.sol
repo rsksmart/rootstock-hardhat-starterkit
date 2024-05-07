@@ -12,10 +12,13 @@ import { ERC20Pausable } from "@openzeppelin/contracts/token/ERC20/extensions/ER
  */
 contract MockERC20 is ERC20, ERC20Burnable, ERC20Pausable, Ownable {
 	constructor(
+		uint256 initialSupply,
 		string memory name,
 		string memory symbol,
 		address initialOwner
-	) ERC20(name, symbol) Ownable(initialOwner) {}
+	) ERC20(name, symbol) Ownable(initialOwner) {
+		_mint(msg.sender, initialSupply);
+	}
 
 	function pause() external onlyOwner {
 		_pause();
