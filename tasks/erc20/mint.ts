@@ -13,7 +13,7 @@ task("erc20-mint", "Mint tokens for BasicERC20 Smart Contract")
 	.addParam<string>("recipient", "ERC20 Tokens Recipient")
 	.addParam<string>("amount", "ERC20 Tokens Amount")
 	.setAction(async (taskArgs, { ethers }) => {
-		const contract = await ethers.getContractAt("BasicERC20", taskArgs.contract)
+		const contract = await ethers.getContractAt("MockERC20", taskArgs.contract)
 
 		const mintTrx = await contract.mint(taskArgs.recipient, taskArgs.amount)
 
