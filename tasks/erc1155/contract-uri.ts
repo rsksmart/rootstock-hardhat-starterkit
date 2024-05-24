@@ -5,7 +5,7 @@ import { task } from "hardhat/config"
  hardhat erc1155-contract-uri \
  --contract 0x320bd6de80d3D5361e1c9bB4CF1D7D9Ef24F3Ac7 \
  --uri https://ipfs.io/ipfs/new-contract-uri-ipfs-hash \
- --network sepolia
+ --network rskTestnet
  */
 task("erc1155-contract-uri", "Set new Contract URI for BasicERC1155 Smart Contract")
 	.addParam<string>("contract", "BasicERC1155 Smart Contract Address")

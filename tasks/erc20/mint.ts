@@ -6,7 +6,7 @@ import { task } from "hardhat/config"
  --contract 0xca6C5326076fe4a1a2369D5Ed8Dd7162c922CD1D \
  --recipient 0x73faDd7E476a9Bc2dA6D1512A528366A3E50c3cF \
  --amount 10000 \
- --network sepolia
+ --network rskTestnet
  */
 task("erc20-mint", "Mint tokens for BasicERC20 Smart Contract")
 	.addParam<string>("contract", "BasicERC20 Smart Contract Address")
