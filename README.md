@@ -88,7 +88,7 @@ To set up your environment, follow these steps:
 
 Ensure you include the following variables:
 
-- `PRIVATE_KEY`
+- `PRIVATE_KEY`: Your private key (e.g., found in account details on Metamask).
 - `RSK_MAINNET_RPC_URL`
 - `RSK_TESTNET_RPC_URL`
 
