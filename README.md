@@ -80,12 +80,24 @@ npm install
 ```shell
 npm run compile
 ```
-
 #### 3. Environment Setup
 
-Create `.env` file and add your environment variables. You can use `.env.example` as a template.
+To set up your environment, follow these steps:
 
-Make sure you include `PRIVATE_KEY` in your `.env` file.
+1. Create a `.env` file and add your environment variables. You can use `.env.example` as a template.
+
+Ensure you include the following variables:
+
+- `PRIVATE_KEY`
+- `RSK_MAINNET_RPC_URL`
+- `RSK_TESTNET_RPC_URL`
+
+2. Obtain RPC URLs for the testnet and mainnet:
+
+- For public RPC URLs, visit the [Rootstock Developer Portal](https://dev.rootstock.io/develop/wallet/use/metamask/).
+- For hosted RPC URLs, you can find them at [GetBlock](https://getblock.io/nodes/rsk/).
+
+These URLs will be used to configure your `.env` file for accessing the RSK network.
 
 ### Example Flow - Deploy ERC721 Token
 
