@@ -11,7 +11,7 @@ task("erc1155-contract-uri", "Set new Contract URI for BasicERC1155 Smart Contra
 	.addParam<string>("contract", "BasicERC1155 Smart Contract Address")
 	.addParam<string>("uri", "New Contract URI")
 	.setAction(async (taskArgs, { ethers }) => {
-		const contract = await ethers.getContractAt("BasicERC1155", taskArgs.contract)
+		const contract = await ethers.getContractAt("MockERC1155", taskArgs.contract)
 
 		console.log(`Current Contract URI: ${await contract.contractURI()}`)
 

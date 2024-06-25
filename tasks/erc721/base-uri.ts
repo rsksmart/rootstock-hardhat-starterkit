@@ -11,7 +11,7 @@ task("erc721-base-uri", "Set new base URI for BasicERC721 Smart Contract")
 	.addParam<string>("contract", "BasicERC721 Smart Contract Address")
 	.addParam<string>("uri", "New Base URI")
 	.setAction(async (taskArgs, { ethers }) => {
-		const contract = await ethers.getContractAt("BasicERC721", taskArgs.contract)
+		const contract = await ethers.getContractAt("MockERC721", taskArgs.contract)
 
 		const trx = await contract.setBaseURI(taskArgs.uri)
 

@@ -15,7 +15,7 @@ task("erc1155-mint", "Mint tokens for BasicERC1155 Smart Contract")
 	.addParam<string>("id", "Token ID")
 	.addParam<string>("amount", "Token Amount")
 	.setAction(async (taskArgs, { ethers }) => {
-		const contract = await ethers.getContractAt("BasicERC1155", taskArgs.contract)
+		const contract = await ethers.getContractAt("MockERC1155", taskArgs.contract)
 
 		const mintTrx = await contract.mint(taskArgs.recipient, taskArgs.id, taskArgs.amount)
 
