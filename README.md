@@ -109,7 +109,6 @@ These URLs will be used to configure your `.env` file for accessing the RSK netw
 hh deploy --network rskTestnet --tags 721
 ```
 
-
 #### 3. Interact With Contract - Mint
 
 ```shell
@@ -117,6 +116,13 @@ hh erc721-mint \
  --contract  <ContractAddress>\
  --recipient  <RecipientAddress>\
  --network rskTestnet
+```
+
+
+### Verify
+
+```
+npx hardhat verify --network rskTestnet DEPLOYED_CONTRACT_ADDRESS "Constructor argument 1"
 ```
 
 ---

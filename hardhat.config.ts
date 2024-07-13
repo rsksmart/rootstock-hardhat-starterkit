@@ -23,7 +23,7 @@ import "./tasks/erc1155/contract-uri";
 
 // Environment variable setup
 const RSK_MAINNET_RPC_URL = process.env.RSK_MAINNET_RPC_URL;
-const RSK_TESTNET_RPC_URL = process.env.RSK_TESTNET_RPC_URL; 
+const RSK_TESTNET_RPC_URL = process.env.RSK_TESTNET_RPC_URL;
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
 
 // Ensure environment variables are configured
@@ -56,14 +56,39 @@ const config: HardhatUserConfig = {
             url: RSK_MAINNET_RPC_URL,
             chainId: 30,
             gasPrice: 60000000,
-			accounts:[PRIVATE_KEY]
+            accounts: [PRIVATE_KEY]
         },
         rskTestnet: {
-            url: RSK_TESTNET_RPC_URL, 
+            url: RSK_TESTNET_RPC_URL,
             chainId: 31,
             gasPrice: 60000000,
-			accounts:[PRIVATE_KEY]
+            accounts: [PRIVATE_KEY]
         },
+    },
+    etherscan: {
+        apiKey: {
+            // Is not required by blockscout. Can be any non-empty string
+            rsktestnet: 'your API key',
+            rskmainnet: 'your API key'
+        },
+        customChains: [
+            {
+                network: "rsktestnet",
+                chainId: 31,
+                urls: {
+                    apiURL: "https://rootstock-testnet.blockscout.com/api/",
+                    browserURL: "https://rootstock-testnet.blockscout.com/",
+                }
+            },
+            {
+                network: "rskmainnet",
+                chainId: 30,
+                urls: {
+                    apiURL: "https://rootstock.blockscout.com/api/",
+                    browserURL: "https://rootstock.blockscout.com/",
+                }
+            },
+        ]
     },
     namedAccounts: {
         deployer: {
