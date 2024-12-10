@@ -1,3 +1,7 @@
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/rsksmart/rootstock-hardhat-starterkit/badge)](https://scorecard.dev/viewer/?uri=github.com/rsksmart/rootstock-hardhat-starterkit)
+[![CodeQL](https://github.com/rsksmart/rootstock-hardhat-starterkit/workflows/CodeQL/badge.svg)](https://github.com/rsksmart/rootstock-hardhat-starterkit/actions?query=workflow%3ACodeQL)
+
+
 <img src="rootstock-logo.jpg" alt="RSK Logo" style="width:100%; height: auto;" />
 
 ## Rootstock Hardhat Starterkit Configuration
