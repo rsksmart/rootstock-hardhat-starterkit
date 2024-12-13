@@ -22,9 +22,9 @@ import "./tasks/erc1155/base-uri";
 import "./tasks/erc1155/contract-uri";
 
 // Environment variable setup
-const RSK_MAINNET_RPC_URL = process.env.RSK_MAINNET_RPC_URL;
-const RSK_TESTNET_RPC_URL = process.env.RSK_TESTNET_RPC_URL;
-const PRIVATE_KEY = process.env.PRIVATE_KEY;
+const RSK_MAINNET_RPC_URL = process.env.RSK_MAINNET_RPC_URL || 'https://public-node.rsk.co';
+const RSK_TESTNET_RPC_URL = process.env.RSK_TESTNET_RPC_URL || 'https://public-node.testnet.rsk.co';
+const PRIVATE_KEY = process.env.PRIVATE_KEY || '0x0c983d201764750fc1c2dca90ae3c78b98fe7d1f01d921c5bfbf65b0612091f9';
 
 // Ensure environment variables are configured
 if (!RSK_MAINNET_RPC_URL) {
