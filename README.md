@@ -1,7 +1,6 @@
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/rsksmart/rootstock-hardhat-starterkit/badge)](https://scorecard.dev/viewer/?uri=github.com/rsksmart/rootstock-hardhat-starterkit)
 [![CodeQL](https://github.com/rsksmart/rootstock-hardhat-starterkit/workflows/CodeQL/badge.svg)](https://github.com/rsksmart/rootstock-hardhat-starterkit/actions?query=workflow%3ACodeQL)
 
-
 <img src="rootstock-logo.jpg" alt="RSK Logo" style="width:100%; height: auto;" />
 
 ## Rootstock Hardhat Starterkit Configuration
@@ -16,6 +15,22 @@
 Check the Hardhat documentation for more information.
 
 https://hardhat.org/getting-started/
+
+## Run the project on Replit
+Replit is an online IDE that allows you to create, edit, and run code directly in your browser. It’s a great platform for quick prototyping and collaborative development. Follow these steps in order to run it:
+
+1. Make sure you have a [Replit Account](https://replit.com/login).
+2. Go to [Rootstock Hardhat Starter Kit Repl](https://replit.com/@christianareva8/rootstock-hardhat-starterkit?v=1#README.md) and click on the fork button.
+3. Click the run button. This will install necessary dependencies and configure the project. 
+4. Once the setup is done, you will be able to run any hardhat command on the console. Here are some examples
+
+```sh
+npx hardhat test
+```
+or
+```sh
+npx hardhat deploy --network rskTestnet --tags 721
+```
 
 ## Project Structure
 
